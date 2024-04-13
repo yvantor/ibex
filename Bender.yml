@@ -23,5 +23,7 @@ sources:
       - zeroriscy_multdiv_fast.sv
       - zeroriscy_prefetch_buffer.sv
       - zeroriscy_fetch_fifo.sv
-      - zeroriscy_tracer.sv
       - zeroriscy_core.sv
+    target: all(not(synthesis))
+      files:
+        - zeroriscy_tracer.sv
